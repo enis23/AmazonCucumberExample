@@ -7,7 +7,12 @@ import com.interview.utilitilies.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en_old.Ac;
+import org.junit.Assert;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+
+import java.security.Key;
 
 // SRP - single responsibility principle
 // her methodun tek bir gorevi olmali
@@ -41,29 +46,34 @@ public class RegisterStepDefinitions {
 
     @Then("user should enter fullName{string}")
     public void userShouldEnterFullName(String fullName) {
-
+        registerPage.userNameTextBox.sendKeys(fullName + Keys.TAB);
     }
 
     @Then("user should enter email{string}")
     public void userShouldEnterEmail(String email) {
+        registerPage.emailTextBox.sendKeys(email + Keys.TAB);
     }
 
     @Then("user should enter password{string}")
     public void userShouldEnterPassword(String password) {
+        registerPage.passwordTextBox.sendKeys(password+ Keys.TAB);
     }
 
     @Then("user should re-enter password{string}")
     public void userShouldReEnterPassword(String passwordConfirmation) {
+        registerPage.passwordConfirmationTextBox.sendKeys(passwordConfirmation+ Keys.TAB);
     }
-
 
 
     @Then("user should click create account button")
-    public void userShouldClickCreateAccountButton() {
+    public void userShouldClickCreateAccountButton() throws InterruptedException {
+        registerPage.createAccountButton.click();
+        Thread.sleep(2000l);
     }
 
     @Then("the new page title should be {string}")
-    public void theNewPageTitleShouldBe(String arg0) {
+    public void theNewPageTitleShouldBe(String title) {
+        Assert.assertEquals(title,Driver.get().getTitle());
     }
 
 
