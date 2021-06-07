@@ -1,0 +1,168 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-07T04:37:48.912Z",
+        "line": 14,
+        "name": "amazon user registration",
+        "description": "",
+        "id": "user-registration;amazon-user-registration;register-data;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14524091000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user should be on the homepage \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"url\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.interview.stepdefs.RegisterStepDefinitions.userShouldBeOnTheHomepage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 990237000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should hover the sign in menu",
+            "match": {
+              "location": "com.interview.stepdefs.RegisterStepDefinitions.userShouldHoverTheSignInMenu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5005882000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should click start here link",
+            "match": {
+              "location": "com.interview.stepdefs.RegisterStepDefinitions.userShouldClickStartHereLink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2618000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should enter \"ahmet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ahmet\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.interview.stepdefs.RegisterStepDefinitions.userShouldEnter(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1054000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should enter \"a1h2m3e4t5@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a1h2m3e4t5@gmail.com\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.interview.stepdefs.RegisterStepDefinitions.userShouldEnter(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 99000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should enter \"asdf1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"asdf1234\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.interview.stepdefs.RegisterStepDefinitions.userShouldEnter(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 152000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should re-enter \"asdf1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"asdf1234\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.interview.stepdefs.RegisterStepDefinitions.userShouldReEnter(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1462000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should click create account button",
+            "match": {
+              "location": "com.interview.stepdefs.RegisterStepDefinitions.userShouldClickCreateAccountButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 153000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the new page title should be \"Authentication required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authentication required\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.interview.stepdefs.RegisterStepDefinitions.theNewPageTitleShouldBe(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "user registration",
+    "description": "",
+    "id": "user-registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/register.feature",
+    "tags": []
+  }
+]

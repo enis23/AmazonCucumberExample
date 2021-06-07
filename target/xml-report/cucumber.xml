@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.992">
+    <testcase classname="user registration" name="amazon user registration" time="20.73">
+        <system-out>
+            <![CDATA[Given user should be on the homepage "url"..................................passed
+Then user should hover the sign in menu.....................................passed
+Then user should click start here link......................................passed
+Then user should enter "ahmet"..............................................passed
+Then user should enter "a1h2m3e4t5@gmail.com"...............................passed
+Then user should enter "asdf1234"...........................................passed
+Then user should re-enter "asdf1234"........................................passed
+Then user should click create account button................................passed
+Then the new page title should be "Authentication required".................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
